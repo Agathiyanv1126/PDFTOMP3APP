@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Circle background -->
+    <path
+        android:fillColor="#29B4BB"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24S11.85,46 24,46 46,36.15 46,24 36.15,2 24,2Z"/>
+
+    <!-- Pause icon -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M16,14h6v20h-6M26,14h6v20h-6"/>
+</vector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"> <!-- Oval shape constrained to a square container = circle -->
+
+    <!-- Solid background color -->
+    <solid android:color="#29B4BB" /> <!-- Replace with your color -->
+
+    <!-- Optional: Add a border -->
+
+
+    <!-- Ensure the circle scales to the container's size -->
+    <size
+        android:width="90dp"
+        android:height="90dp" />
+</shape>
