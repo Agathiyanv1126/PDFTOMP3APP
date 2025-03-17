@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/audiobox"
+    android:layout_marginBottom="12dp"> <!-- Space between items -->
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/fileDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Added"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/fileUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File URL"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:visibility="gone" /> <!-- Hide by default, show if needed -->
+
+</LinearLayout>
