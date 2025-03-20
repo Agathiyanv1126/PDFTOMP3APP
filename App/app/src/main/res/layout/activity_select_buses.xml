@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/beige"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SelectRoutes">
+
+    <!-- Top Divider Line -->
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white" />
+
+    <!-- Title Bar with Back Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backk"
+            android:contentDescription="Back Button"
+            />
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select your bus route"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <!-- Bottom Divider Line -->
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <!-- Search View -->
+    <com.google.android.material.search.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginHorizontal="25dp"
+        android:drawableStart="@drawable/search_24"
+        android:background="@drawable/searchbackground"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/black"
+        android:hint="Search"
+        android:paddingStart="10dp"
+        android:singleLine="true"
+        android:textColorHint="@color/black"
+        android:textSize="16dp"
+        android:imeOptions="actionSearch" />
+
+    <!-- ImageView (Placeholder) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <!-- RecyclerView for Routes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/busRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="70dp"
+        tools:listitem="@layout/select_buses_items" />
+
+
+</LinearLayout>

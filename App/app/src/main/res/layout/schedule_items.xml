@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:weightSum="2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/textBusName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/row_border"
+        android:text="Bus Name"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textBusNo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/row_border"
+        android:text="Bus No"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+</LinearLayout>
